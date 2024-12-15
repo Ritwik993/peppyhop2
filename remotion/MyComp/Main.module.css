@@ -1,0 +1,30 @@
+.top_container{
+    animation: bottom-to-top 1s ease-in ; 
+}
+
+.bottom_container{
+    animation: moveZ 1s ease-in;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+@keyframes bottom-to-top {
+    0%{
+        transform:translateY(200px) ;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveZ {
+    0% {
+        transform: scale(2) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+    
+}
